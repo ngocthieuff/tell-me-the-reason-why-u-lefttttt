@@ -51,7 +51,11 @@ Let the shopkeeper know about our action BUY_CAKE:
 
 - Reducer - (prevState, action) => newState
 
+#### Sync vs Async:
 
+**Synchronous Actions:**: as soon as an action was dispatched, the state was immediately updated.
+
+**Asynchronous Actions:**: Async API calls to fetch data from an end point and use that data in your application.
 
 ### References:
 
