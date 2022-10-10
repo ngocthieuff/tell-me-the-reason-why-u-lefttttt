@@ -22,6 +22,36 @@ Shopkeeper - Reducer - Ties the store and actions together
 - An `action` that describes the changes in the state of your application.
 - A `reducer` which actually carries our the state transition depending on the action.
 
+### Three principles:
+
+##### 1. The state of whole app is stored in an object tree within a single store
+
+- Maintain our application state in a single object which would be managed by the Redux store.
+
+Let's assume we are tracking the number of cakes on the shelf: 
+``` 
+ {
+   numberOfCakes: 10
+ }
+```
+
+##### 2. The only way to change the state is to emit an action, an object describing what happened
+
+- Not allowed to directly update the state object.
+
+Let the shopkeeper know about our action BUY_CAKE:
+
+```
+{
+   type: BUY_CAKE
+}
+```
+
+##### 3. Use pure reducers to specify how the state tree is transformed by actions
+
+- Reducer - (prevState, action) => newState
+
+
 
 ### References:
 
